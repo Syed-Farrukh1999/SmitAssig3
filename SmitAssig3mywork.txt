@@ -1,0 +1,167 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FishCorner</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<header>
+    <section class="headersection">
+        <h2 class="logo">Fish Corner
+            <img src="./logo.jfif" alt="logo" width="50px" height="30">
+        </h2>
+
+        <div class="head">
+            <nav>Home</nav>
+            <nav>Our Products</nav>
+            <nav>about Us</nav>
+            <nav>Photo Gallery</nav>
+            <nav>Our Projects</nav>
+            <nav>Contact Us</nav>
+        </div>
+    </section>
+    <section>
+        <div id="hero">
+            <div>
+                <h2 style="text-align: center;">NATURE IN A BOX</h2>
+                <P style="text-align: center;">Delivering you the highest quality Aquarium products</P>
+                <input type="button" class="cstmbtn" name="SHOP ONLINE" value="SHOP ONLINE">
+            </div>
+        </div>
+    </section>
+</header>
+
+<body>
+    <section>
+        <div class="abtus">
+            <h2>ABOUT US</h2>
+            <p> <img src="./aboutsec.jfif" alt="FishcornerAboutSecPic" height="150px" width="150px" align="right">
+                <dfn>FISH CORNER</dfn> is your single destination for all things aquatic. Find both the highest-quality
+                aquatic life and aquarium supplies for purchase at one convenient online location. <dfn>FISH
+                    CORNER</dfn> offers aquarium hobbyists the best shopping experience possible, with a great selection
+                of freshwater and saltwater fish, invertebrates, live plants and quality aquarium supplies.. all at
+                great prices
+            </p>
+            <p>
+                <dfn>FISH CORNER</dfn> has been operating since 2016. Our store is located in Federal B Area,
+                Shareefabad, Karachi where you can come visit us. We are always excited to meet our customers face to
+                face and help them succeed in this beautiful hobby in any way possible. At AQUATIC HOUSE we make sure to
+                give you the attention and care you need to ensure every step of your aquarium journey is a successful
+                and enjoyable experience.
+            </p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2>OUR SERVICES</h2>
+            <h3>CATEGORIES </h3>
+            <ul>
+                <li>Tanks & Setups</li>
+                <li>
+                    <p> Live Stock <br>
+                        <select>
+                            <option>Fresh Water Fishes </option>
+                            <option>Salt Water Fishes </option>
+                        </select>
+                    </p>
+                </li>
+                <li>
+                    <p>Accessories<br>
+                        <select>
+                            <option>Fish Food</option>
+                            <option>Aquarium Filters</option>
+                            <option>Aquarium Plants</option>
+                            <option>Sand and Substrate</option>
+                            <option>Fish Medicines</option>
+                            <option>Aquarium Lights</option>
+                        </select>
+                    </p>
+                </li>
+                <li>Live Plants</li>
+                <li>Hardscape</li>
+                <li>Special Packages</li>
+            </ul>
+        </div>
+    </section>
+
+=============================================================================================================================
+CSS SECTION
+
+:root {
+  --bg-color: rgba(40, 5, 94, 0.945);
+  --color: rgba(14, 1, 1, 0.704);
+  --font-weight: bolder;
+}
+* {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  color: var(--color);
+  /* background-color: var(--bg-color); */
+}
+header {
+  background-color: var(--bg-color);
+}
+body {
+  background-color: var(--bg-color);
+}
+
+.headersection {
+  background-color: var(--bg-color);
+  font: var(--font-color);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: var(--font-weight);
+  background-color: var(--bg-color);
+}
+
+.logo {
+  text-align: center;
+  /* display: inline; */
+  /* background-image: url("./logoBackground.jfif"); */
+  background-color: var(--var-color);
+  font-family: "Courier New", Courier, monospace;
+  font: rgb(226, 219, 219);
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  gap: 10px;
+  background-color: var(--var-color);
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  background-color: var(--bg-color);
+}
+
+#hero {
+  background-image: url("./Herobg_18dd88e2.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  height: 300px;
+}
+.cstmbtn {
+  padding: 12px 25px;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  /* padding: 10px 20px; */
+}
+.cstmbtn:hover {
+  background-color: white;
+  color: black;
+}
+p {
+  font-weight: var(--font-weight);
+}
+.abtus {
+  font-weight: var(--font-weight);
+  background-color: var(--bg-color);
